@@ -20,7 +20,6 @@ function getComputerChoice() {
 
     return choice;
 }
-
 function playRound(computerSelection, playerSelection) {
     let result;
 
@@ -32,6 +31,14 @@ function playRound(computerSelection, playerSelection) {
 
     return result;
 }
+
+const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+            alert(button.id);
+        });
+    });
+
 
 
 
